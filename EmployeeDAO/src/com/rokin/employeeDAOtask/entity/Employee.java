@@ -10,14 +10,13 @@ package com.rokin.employeeDAOtask.entity;
  * @author rokin
  */
 public class Employee {
-    int id;
-    private String firstName, lastName, email, phone, salary;
-    int status;
+    
+    private String id, firstName, lastName, email, phone, salary, status;
 
     public Employee() {
     }
 
-    public Employee(int id, String firstName, String lastName, String email, String phone, String salary, int status) {
+    public Employee(String id, String firstName, String lastName, String email, String phone, String salary, String status) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,11 +26,11 @@ public class Employee {
         this.status = status;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -75,11 +74,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

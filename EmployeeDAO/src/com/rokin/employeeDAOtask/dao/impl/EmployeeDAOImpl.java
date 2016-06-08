@@ -17,6 +17,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 
     List<Employee> employeeList = new ArrayList<>();
     
+    
     @Override
     public int insert(Employee e) {
         employeeList.add(e);
@@ -29,15 +30,21 @@ public class EmployeeDAOImpl implements EmployeeDAO{
     }
 
     @Override
-    public Employee getByID(int id) {
+    public Employee getByID(String id) {
         for(Employee e : employeeList)
         {
-            if(e.getId() == id)
+            if(e.getId().equals(id))
             {
                 return e;
             }
         }
         return null;
+    }
+
+    @Override
+    public int delete(Employee e) {
+        employeeList.remove(e);
+        return 1;
     }
     
 }

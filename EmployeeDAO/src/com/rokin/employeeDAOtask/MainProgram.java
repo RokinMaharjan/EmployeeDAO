@@ -6,8 +6,7 @@
 package com.rokin.employeeDAOtask;
 import com.rokin.employeeDAOtask.operation.OperationClass;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 
 
@@ -23,7 +22,7 @@ public class MainProgram {
     public static void main(String[] args) {
         try {
             OperationClass operation = new OperationClass();
-            operation.readFile();
+            operation.initializeList();
         } catch (IOException ex) {
             System.out.println("Exception: " + ex.getMessage());
         }

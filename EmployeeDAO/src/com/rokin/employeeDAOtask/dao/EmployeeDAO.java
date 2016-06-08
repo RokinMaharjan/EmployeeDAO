@@ -15,5 +15,6 @@ import java.util.List;
 public interface EmployeeDAO {
     int insert(Employee e);
     List<Employee> getAll();
-    Employee getByID(int id);   
+    Employee getByID(String id); 
+    int delete(Employee e);
 }
