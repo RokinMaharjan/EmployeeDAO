@@ -25,8 +25,8 @@ public class OperationClass {
     public void initializeList() throws IOException
     {
         EmployeeDAO employeeDAOimpl = new EmployeeDAOImpl();
-        FileWriter brokenWriter = new FileWriter("/home/rokin/NetBeansProjects/EmployeeDAOTask/broken.txt");
-        BufferedReader reader = new BufferedReader(new FileReader(new File("/home/rokin/NetBeansProjects/EmployeeDAOTask/test data.csv")));
+        FileWriter brokenWriter = new FileWriter("/home/rokin/NetBeansProjects/EmployeeDAOTask/Broken Data.csv");
+        BufferedReader reader = new BufferedReader(new FileReader(new File("/home/rokin/NetBeansProjects/EmployeeDAOTask/Test Data.csv")));
         
         String line ="";
         while((line = reader.readLine()) != null)

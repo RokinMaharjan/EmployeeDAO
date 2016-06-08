@@ -24,7 +24,7 @@ public class SortingClass {
     
     public void sortRecords(EmployeeDAO employeeDAOimpl, FileWriter brokenWriter) throws IOException
     {
-        BufferedReader reader = new BufferedReader(new FileReader(new File("/home/rokin/NetBeansProjects/EmployeeDAOTask/test data.csv")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("/home/rokin/NetBeansProjects/EmployeeDAOTask/Test Data.csv")));
         String line = "";
 
         while((line = reader.readLine()) != null)
@@ -69,7 +69,7 @@ public class SortingClass {
         
         Date date = new Date();
         BufferedReader reader = new BufferedReader(new FileReader("/home/rokin/NetBeansProjects/EmployeeDAOTask/Semi Sorted.csv"));
-        FileWriter okayWriter = new FileWriter("/home/rokin/NetBeansProjects/EmployeeDAOTask/okay_");
+        FileWriter okayWriter = new FileWriter("/home/rokin/NetBeansProjects/EmployeeDAOTask/Sorted Data.csv");
         String line = "";
         
         while ((line = reader.readLine()) != null) 
